@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Tulip | Login</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Darker+Grotesque&family=Gruppo&family=Nixie+One&family=Quicksand:wght@400;600&family=Poppins:wght@100&family=Thasadith&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Raleway:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        /* font-family: 'Cinzel Decorative', cursive; */
+        --webkit-font-smoothing: antialiased:
+    }
+
+    body {
+        background-image: url(../images/2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .form {
+        height: max-content;
+        width: max-content;
+        background-color: rgb(29, 26, 26, 0.55);
+        margin-right: auto;
+        margin-left: auto;
+        padding: 30px;
+        border-radius: 12px;
+        margin-top: 30px;
+    }
+
+    table tr {
+        color: gold;
+    }
+
+    h2 {
+        color: gold;
+        padding-bottom: 40px;
+        font-size: 40px;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    input[type=text],
+    input[type=password] {
+        padding: 5px;
+        width: 150;
+        border-radius: 7px;
+        font-weight: 900;
+        /* text-transform: uppercase; */
+        background-color: navajowhite;
+        border: 3px solid black;
+    }
+
+    .tag {
+        font-size: 25px;
+    }
+
+    input[type=submit] {
+        padding: 10px 40px;
+        margin: 28px 0px 0px 0px;
+        border-radius: 10px;
+        background-color: navajowhite;
+    }
+
+    input[type=submit]:hover {
+        background-color: rgb(248, 206, 142);
+        opacity: 0.8;
+        transition-duration: 0.3s;
+    }
+
+    input[value=login] {
+        font-size: 20px;
+        border: 3px solid black;
+        font-weight: 700;
+    }
+
+    input[value=login]:hover {
+        color: black;
+        opacity: 1;
+    }
+
+    .logo {
+        /* background-color: rgb(248, 248, 255); */
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    td>a{
+        color:gold;
+        padding-left: 55px;
+        text-decoration: none;
+    }
+
+    td>a:hover{
+        color:orange;
+        transition:.3s ease;
+    }
+</style>
+
+<body>
+    <div class="form">
+        <div class="logo"><img src="../icons/tgt.png" style="height:250px;"></div>
+        <h2>Welcome to The Golden Tulip</h2>
+        <form action="home.html" method="POST">
+
+            <table class="t1">
+                <tr>
+                    <th class="tag">Username : </th>
+                    <td><input type="text" id="username" name="usename" required></td>
+                </tr>
+                <tr>
+                    <th class="tag">Password : </th>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type='submit' value="login"></th>
+                </tr>
+                <tr>
+                    <td><a href="forgotpassword.html">Forgot password</a></td>
+                    <td><a href="../php/registration_page.php">Sign up</a></td>
+                </tr>
+            </table>
+        
+        </form>
+    </div>
+</body>
+</html>
